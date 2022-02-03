@@ -13,6 +13,7 @@
     <button class="btn btn-primary" type="button" v-on:click="getUser()">
       Submit
     </button>
+    <p class="mt-2">Name: {{user.name}} <br> Address: {{user.address}}</p>
   </div>
 </template>
 
@@ -22,7 +23,8 @@ import axios from "axios";
 export default {
   data() {
     return {
-      user: []
+      id:"",
+      user:[]
     };
   },
   methods: {
@@ -31,7 +33,7 @@ export default {
         .get(`http://10.0.32.6:9090/user/` + this.id)
         .then((response) => {
           console.log(response.data);
-          this.img = response.data;
+          this.user = response.data;
         })
         .catch((error) => console.log(error));
     },
