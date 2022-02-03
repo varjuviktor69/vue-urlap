@@ -5,7 +5,8 @@
     <router-link to="/adduser">AddUsers</router-link> |
     <router-link to="/allusers">AllUsers</router-link> |
     <router-link to="/userbyid">UserByID</router-link> |
-    <router-link to="/delete">Delete</router-link>
+    <router-link to="/delete">Delete</router-link> |
+    <router-link to="/put">Put</router-link>
   </div>
   <router-view/>
 </template>

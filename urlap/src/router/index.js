@@ -4,6 +4,7 @@ import AddUser from '../views/Post/AddUser.vue'
 import AllUsers from '../views/Get/AllUsers.vue'
 import UserByID from '../views/Get/UserByID.vue'
 import Delete from '../views/Delete/Delete.vue'
+import Put from '../views/Put/Put.vue'
 
 const routes = [
   {
@@ -38,6 +39,11 @@ const routes = [
     path: '/delete',
     name: 'Delete',
     component: Delete
+  },
+  {
+    path: '/put',
+    name: 'Put',
+    component: Put
   },
 ]
 
